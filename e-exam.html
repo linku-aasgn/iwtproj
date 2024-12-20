@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Exam</title>
+    <link rel="stylesheet" href="e-exam.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo"></div>
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="e-exam.html" class="active">e-Exam</a></li>
+            <li><a href="e-repository.html">E-Repository</a></li>
+            <li><a href="openforum.html">Open Forum</a></li>
+            <li><a href="mywall.html">MyWall</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-search">
+            <input type="text" placeholder="Search..." />
+            <button class="btn btn-search">Go</button>
+        </div>
+    </nav>
+
+    <!-- E-Exam Section -->
+    <div class="main-container">
+        <h1>Exam Portal</h1>
+
+        <!-- Available Exams Section -->
+        <div class="available-exams">
+            <h2>Available Exams</h2>
+            <div class="exam-card">
+                <h3>Java Exam</h3>
+                <p>Test your knowledge in Java.</p>
+                <button class="btn">Take Test</button>
+            </div>
+            <div class="exam-card">
+                <h3>C++ Exam</h3>
+                <p>Test your knowledge in C++.</p>
+                <button class="btn">Take Test</button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <h2>Exam Results</h2>
+            <ul id="resultsList">
+                <li>Java Exam - <strong>10/15</strong></li>
+                <li>C++ Exam - <strong>8/15</strong></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="e-exam.js"></script>
+</body>
+</html>

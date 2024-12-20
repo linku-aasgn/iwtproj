@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+    margin: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #4CAF50; /* Match navbar color to previous pages */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Space between logo, links, and search */
+    align-items: center;
+    color: white;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px; /* Add padding for better spacing */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #a1c4fd;
+    background-color: #007bff; /* Add hover background color */
+}
+
+/* Search Bar Styling */
+.nav-search {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-search input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.nav-search .btn-search {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.nav-search .btn-search:hover {
+    opacity: 0.9;
+}
+
+/* Main Container Styling */
+.main-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.main-container h1 {
+    color: #4CAF50; /* Match heading color to previous pages */
+    margin-bottom: 10px;
+}
+
+.main-container p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#fileInput {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Files Section */
+
+/* Files Section */
+/* Files Section */
+.files-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.files-section li {
+    display: flex;
+    justify-content: space-between; /* Space out file name and buttons */
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}
+
+.files-section li span {
+    flex: 1; /* File name takes up remaining space */
+    text-align: left;
+}
+
+.files-section li button {
+    margin-left: 10px; /* Add space between buttons */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.files-section li button.btn-delete {
+    background-color: #f44336; /* Red color for delete button */
+}
+
+.files-section li button:hover {
+    opacity: 0.9;
+}

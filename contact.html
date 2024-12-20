@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo"></div>
+        <ul class="nav-links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="e-exam.html">E-Exam</a></li>
+            <li><a href="e-repository.html">E-Repository</a></li>
+            <li><a href="openforum.html">Open Forum</a></li>
+            <li><a href="mywall.html">My Wall</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+        <div class="nav-search">
+            <input type="text" placeholder="Search..." />
+            <button class="btn btn-search">Go</button>
+        </div>
+    </nav>
+
+    <!-- Contact Us Section -->
+    <div class="main-container">
+        <h1>Contact Us</h1>
+        <p>Have any questions or queries? Feel free to reach out to us!</p>
+
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/mpwzevzj" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="Message" rows="5" placeholder="Type your message here" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
